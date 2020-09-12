@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lander One</title>
+
+
+  <script src='https://code.jquery.com/jquery-2.2.1.min.js'></script>
+  
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="header">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-center top-title">Live Cam Invite</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="mycontainer">
+        <div class='row'>
+          <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+            <div class="wrapbox">
+              <h1>PRIVATE INVITE</h1>
+              <div class="flavorbox">
+      					<p>Connect with this</p>
+      					<h2>Verified Member</h2>
+      					<h3>for free</h3>
+                <div class="profilepix">
+									<img src="image/modelpic/2.jpg">
+									<img src="image/modelpic/3.jpg">
+									<img src="image/modelpic/4.jpg">
+									<img src="image/modelpic/5.jpg">
+			        	</div>
+				      </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+            <div class="wrapbox">
+              <h1>MEMBER PROFILE</h1>
+              <div class="bstar">
+      					<img src="image/assets/star.png" alt="star">
+      					<img src="image/assets/star.png" alt="star">
+      					<img src="image/assets/star.png" alt="star">
+      					<img src="image/assets/star-half.png" alt="star half">
+      				</div>
+              <div class="star-number">9,891 user ratings</div>
+              <div class="likebox">
+      					<div class="liketxt"><span>102</span><p>likes</p></div>
+      					<div class="liketxt"><span>52</span><p>were here</p></div>
+      				</div>
+              <div class="mmx">
+                <span>Name</span><p id="fb_name" class="fcon">Model Name</p>
+              </div>
+              <div class="mmx"><span>Invite For</span><p class="fcon" id="their_name">You</p>
+              </div>
+              <div class="mmx"><span>Status</span><p>Single</p></div>
+              <div class="cmobil"><span>Mobile</span><p class="mcon">Confirmed</p></div>
+              <div class="cface"><span>Facebook</span><p class="fcon">Connected</p></div>
+              <div class="getit">Your Free Invite Expires In</div>
+
+              <div class="flavorbox time">
+        				<h3 id="countdown" class="bigTime time">0:10</h3>
+        			</div><br><br>
+
+              <div class="text-center"><a href="decline.html" class="main">Accept Invite</a></div>
+              <br/>
+              <div class="text-center"><a href="decline.html" class="plain">Decline Invite</center></div>
+
+            </div>
+          </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+            <div class="wrapbox">
+              <h1>Chatting with (Model Name)</h1>
+          			<img style="border:0px solid #782685; padding: 0;" src="image/modelpic/mainpic.jpg"  width="100%"/></a>
+
+
+          			<div class="chat">
+          				<div id="chatbot">
+          					<div id="chatbot-message">
+								<div style="padding: 5px; font-size: 10px" align="center">
+								Facebook Invited Friend Has Joined Chat</div>
+								<p class="from-bot">
+									<span class="user">Model Name: </span>hey, say hi lol. sorry my phone died...</p>
+								<p class="from-bot"><span class="user">Model Name: </span>it says your still here, where you at?
+								</p>
+								<p class="from-bot"><span class="user">Model Name: </span>where are you???</p>
+								
+								<p class="from-bot"><span class="user">Model Name: </span>it says your still here, where you at?</p>
+							</div>
+
+							<div class="chat-form">
+							  <form>
+								  <div class="input-group mb-3">
+									<input type="text" class="form-control" placeholder="Message ...">
+									<div id="send_button" onclick="alert('Signup First')" class="input-group-append">
+									  <span class="input-group-text">Send</span>
+									</div>
+								  </div>
+								</form>
+							</div>
+
+          				</div>
+          			</div>
+          			<button class="blue_button">
+                  <i class="fa fa-angle-double-right" style="font-size:36px;float: left; margin-left: 10px; margin-top: -7px;"></i>
+                  Connect with Profile
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+	<script type="text/javascript">
+
+		setTimeout(function() {
+			$('.popthis').addClass('show');
+		}, 20000);
+			$('.mainfb, button, img, span, div').click(function() {
+				$('.popthis').addClass('show');
+			});
+			$('.popthis').click(function() {
+				$('.popthis').removeClass('show');
+			});
+			var seconds = 10;
+			function secondPassed() {
+				var minutes = Math.round((seconds - 30)/60);
+				var remainingSeconds = seconds % 60;
+				if (remainingSeconds < 10) {
+					remainingSeconds = "0" + remainingSeconds;
+				}
+				document.getElementById('countdown').innerHTML = minutes + ":" + remainingSeconds;
+				if (seconds == 0) {
+					clearInterval(countdownTimer);
+					document.getElementById('countdown').innerHTML = "<span class='lastChance'>HURRY</span>";
+				} else {
+					seconds--;
+				}
+			}
+			var countdownTimer = setInterval('secondPassed()', 1000);
+			var today = new Date();
+			var dd = today.getDate();
+			var mm = today.getMonth()+1; //January is 0
+			var yyyy = today.getFullYear();
+			if(dd<10) {
+			dd='0'+dd
+			}
+			if(mm<10) {
+			mm='0'+mm
+			}
+			today = mm+'/'+dd+'/'+yyyy;
+
+	</script>
+	
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+</html>
